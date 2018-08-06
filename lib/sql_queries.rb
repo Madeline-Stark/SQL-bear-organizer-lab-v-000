@@ -19,26 +19,16 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT       `color`,
+  "SELECT      `color`,
                COUNT(`color`) AS `value_occurrence`
       FROM     `bears`
       GROUP BY `color`
       ORDER BY `value_occurrence` DESC
       LIMIT    1";
-  # "SELECT top_color.color, top_color.total
-  # FROM
-  # (SELECT
-  # (
-  # SELECT color, COUNT(color) FROM bears GROUP BY color;
-  # ) AS top
-  # ) AS top_color
-  # ";
-  #need to count the times each color appears
-  #need to return highest number
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "Write your SQL query here"
+  "SELECT temperament, COUNT(temperament) FROM bears WHERE temperament = 'goofy';"
 end
 
 def selects_bear_that_killed_Tim
