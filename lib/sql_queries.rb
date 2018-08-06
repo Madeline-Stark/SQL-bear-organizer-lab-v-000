@@ -28,7 +28,7 @@ def selects_most_prominent_color_and_returns_with_count
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "SELECT COUNT(`temperament`) FROM `bears`WHERE temperament = 'goofy'";
+  "SELECT COUNT(`temperament`) FROM `bears` WHERE temperament = 'goofy'";
   #"SELECT count(*) COUNT(temperament) FROM bears WHERE temperament = 'goofy';"
   #ORDER BY `value_occurrence` DESC
   #GROUP BY `temperament`
