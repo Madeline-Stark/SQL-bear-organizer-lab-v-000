@@ -32,10 +32,10 @@ def counts_number_of_bears_with_goofy_temperaments
                COUNT(`temperament`) AS `value_occurrence`
       FROM     `bears`
       WHERE temperament = 'goofy'
-      GROUP BY `temperament`
       LIMIT    1";
   #"SELECT count(*) COUNT(temperament) FROM bears WHERE temperament = 'goofy';"
   #ORDER BY `value_occurrence` DESC
+  #GROUP BY `temperament`
 end
 
 def selects_bear_that_killed_Tim
